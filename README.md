@@ -54,7 +54,7 @@ def save_code(file_path_list, code_save_dir):
             dest_fpath = os.path.join(code_save_dir, path)
             os.makedirs(os.path.dirname(dest_fpath), exist_ok=True)
 
-            shutil.copy(path, os.path.join(code_save_dir, dest_fpath))
+            shutil.copy(path, dest_fpath)
         else:  
             print("{} is a special file (socket, FIFO, device file). Not support.".format(path) )
 ```
