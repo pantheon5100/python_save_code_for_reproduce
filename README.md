@@ -28,7 +28,7 @@ def save_code(file_path_list, code_save_dir):
         if os.path.isdir(path):  
             # for bash file
             # search files and save it 
-            pathname = os.path.join(path, "/**/*.sh")
+            pathname = os.path.join(path, "**/*.sh")
             files = glob.glob(pathname, recursive=True)
             for file in files:
                 dest_fpath = os.path.join(code_save_dir, file)
@@ -40,7 +40,7 @@ def save_code(file_path_list, code_save_dir):
 
             # for python file
             # search files and save it 
-            pathname = os.path.join(path, "/**/*.py")
+            pathname = os.path.join(path, "**/*.py")
             files = glob.glob(pathname, recursive=True)
             for file in files:
                 dest_fpath = os.path.join(code_save_dir, file)
