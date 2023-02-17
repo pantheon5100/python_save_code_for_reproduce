@@ -11,6 +11,9 @@ save_code(["./main.py", "option.py", "model", "run_script"], "./result/expriment
 save_code(["./main.py", "option.py", "model", "run_script"], "./result/expriment1/code")
 
 # function definition
+import os
+import glob
+import shutil
 def save_code(file_path_list, code_save_dir):
     """
     file_list: ["file_1.py", "folder1", ...]
